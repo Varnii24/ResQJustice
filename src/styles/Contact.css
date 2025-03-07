@@ -1,0 +1,44 @@
+.contact-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.contact-options button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: 0.3s;
+}
+
+.contact-options button:hover {
+    background-color: #0056b3;
+}
+.contact-options button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+@media (max-width: 600px) {
+    .contact-options {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .contact-options button {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+    }
+}

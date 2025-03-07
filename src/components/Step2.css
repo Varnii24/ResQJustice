@@ -1,0 +1,30 @@
+.step-card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin-top: 20px;
+  }
+  
+  .step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .start-btn {
+    background: #7a5ef8;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .start-btn:hover {
+    background: #5a42d1;
+  }
+  

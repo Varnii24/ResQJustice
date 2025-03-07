@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    flex-direction: column; /* Stack title and links */
+    align-items: center;
+    background: #6A40D1; /* Purple background */
+    padding: 15px;
+    color: white;
+}
+
+.navbar-title {
+    font-size: 28px; /* Bigger POWERUP */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between title & links */
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}

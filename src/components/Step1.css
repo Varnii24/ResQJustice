@@ -1,0 +1,22 @@
+.steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .step-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #7a5ef8;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .step-button:hover {
+    background: #5a42d1;
+  }
+  

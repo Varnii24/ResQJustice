@@ -1,0 +1,104 @@
+.dashboard-container {
+    text-align: center;
+    background: linear-gradient(to right, #f7f5ff, #e0e7ff);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.dashboard-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2b2d42;
+}
+
+.dashboard-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.steps-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.step-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #7a5ef8;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.step-button:hover {
+    background: #5a42d1;
+}
+
+.active {
+    background: #4a35c6;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.step-card {
+    background: white;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.step-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.start-btn {
+    background: #7a5ef8;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    background: #5a42d1;
+}
+@media (max-width: 768px) {
+    .steps-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .step-button {
+        width: 80%;
+        text-align: center;
+    }
+
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.active {
+    background: #4a35c6;
+    box-shadow: 0px 0px 10px rgba(74, 53, 198, 0.5);
+}

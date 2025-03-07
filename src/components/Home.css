@@ -1,0 +1,130 @@
+/* General Styles */
+.home-container {
+    background: linear-gradient(to bottom, #1e1a3a, #5a189a, #ff758f); /* Dark Purple to Magenta */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 60px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 950px;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+/* CTA Button */
+.cta-button {
+    background: linear-gradient(to right, #ff4b5c, #ff758f);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(255, 117, 143, 0.5);
+}
+
+.cta-button:hover {
+    background: linear-gradient(to right, #c0392b, #ff4b5c);
+    transform: translateY(-4px);
+    box-shadow: 0px 10px 20px rgba(255, 117, 143, 0.8);
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    width: 85%;
+    max-width: 1200px;
+}
+
+/* About Card */
+.about-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 35px;
+    border-radius: 15px;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    transition: transform 0.3s ease-in-out;
+    min-width: 320px;
+}
+
+.about-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.3);
+}
+
+.about-card h2 {
+    font-size: 1.8rem;
+    color: #ffdf6b; /* Gold */
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+/* About Card List */
+.about-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 12px;
+}
+
+.about-card li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+/* Highlighted Text */
+.about-card li strong {
+    color: #ffdf6b;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero, .about-card {
+    animation: fadeIn 0.8s ease-in-out;
+}
